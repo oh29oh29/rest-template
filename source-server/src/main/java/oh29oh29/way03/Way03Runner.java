@@ -1,15 +1,15 @@
-package oh29oh29.way01.service;
+package oh29oh29.way03;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Way01Runner implements ApplicationRunner {
+public class Way03Runner implements ApplicationRunner {
 
-    private final Way01Service service;
+    private final Way03Service service;
 
-    public Way01Runner(Way01Service service) {
+    public Way03Runner(Way03Service service) {
         this.service = service;
     }
 

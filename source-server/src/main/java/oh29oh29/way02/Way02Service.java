@@ -1,4 +1,4 @@
-package oh29oh29.way02.service;
+package oh29oh29.way02;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -6,9 +6,12 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class Way02Service {
 
+    /**
+     * getForObject
+     */
     public void send() {
         final RestTemplate restTemplate = new RestTemplate();
-        final String url = "http://localhost:8081/object";
+        final String url = "http://localhost:8081/way02";
         final User response = restTemplate.getForObject(url, User.class);
 
         System.out.println("## Way02 Response");
