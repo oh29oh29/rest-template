@@ -23,8 +23,8 @@ public class DestinationController {
         return new Item(request.getName());
     }
 
-    @PostMapping(value = "/way06", produces = {"application/x-www-form-urlencoded;charset=UTF-8"})
-    public Item way06(@RequestBody Item request) {
+    @PostMapping(value = "/way06")
+    public Item way06(Item request) {
         return new Item(request.getName());
     }
 
