@@ -10,7 +10,7 @@ public class DestinationController {
 
     @GetMapping("/way01")
     public String way01() {
-        return "string";
+        return "way01";
     }
 
     @GetMapping({"/way02", "way03"})
@@ -23,9 +23,15 @@ public class DestinationController {
         return new Item(request.getName());
     }
 
-    @PostMapping(value = "/way06")
+    @PostMapping("/way06")
     public Item way06(Item request) {
         return new Item(request.getName());
+    }
+
+    @GetMapping("/way07")
+    public String way07() throws InterruptedException {
+        Thread.sleep(3_000);
+        return "way07";
     }
 
     private static class User {
